@@ -1,2 +1,5 @@
 # MOSS
-Here MOSS files
+Here MOSS files.
+
+
+Multiple Observations Segment Search.
