@@ -58,7 +58,7 @@ project/
 
 ## Usage
 
-### 1. Configure Script Parameters
+## 1. Configure Script Parameters
 
 At the top of `MOSS.sh`, specify the required paths and parameters:
 
@@ -73,7 +73,7 @@ P=50  # Parallel processes, i.e., the number of cpu cores in parallel.
 
 You can also adjust `files_per_segment`, `overlap_files`, and PRESTO settings such as `dmstep`, `zmax`, add another search parameters (e.g., `wmax`), etc.
 
-### 2. Run the Script
+## 2. Run the Script
 
 ```bash
 bash MOSS.sh
@@ -108,8 +108,8 @@ The following versions of the script are available:
 
 5. Versions with the DDplan prefix use PRESTO’s DDplan.py to generate dedispersion plans, suitable for blind searches over wide DM ranges.
 
-------
-### Citation
+---
+## Citation
 
 This script is a framework and we welcome modifications tailored to your specific processing needs.
 
