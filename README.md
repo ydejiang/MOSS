@@ -3,7 +3,6 @@
 
 **MOSS** is a flexible and parallelized pulsar search pipeline based on [PRESTO](https://www.cv.nrao.edu/~sransom/presto/) toolkit. It supports segmented and full-length searches across one or multiple observations of a single source. The script is optimized for large-scale processing of FAST data, especially for sources like globular clusters, but is adaptable for general pulsar search applications.
 
-##---
 ### Key Features
 
 * Fully based on PRESTO utilities.
