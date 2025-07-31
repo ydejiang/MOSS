@@ -84,7 +84,6 @@ dmstrs = [x for x, _ in sorted(
     [(s, float(s)) for s in valid_dmstrs], key=lambda t: t[1]
 )]
 
-
 # Read in all the candidates
 cands = sifting.read_candidates(candfiles)
 
