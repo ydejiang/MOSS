@@ -35,7 +35,6 @@ Each step runs in parallel for optimal performance.
 * [PRESTO](https://www.cv.nrao.edu/~sransom/presto/)
 * Bash 4+
 * GNU Coreutils (`ls`, `xargs`, `find`, etc.)
----
 
 ## Directory Structure
 
@@ -52,9 +51,6 @@ project/
     │   ├── segment_*/
     │   └── segment_command/
     └── ...
-```
-
----
 
 ## Usage
 
@@ -85,16 +81,12 @@ This will:
 * Generate command files for each processing step
 * Execute all steps in parallel
 
----
-
 ## Output
 
 * Segmented processing directories with logs
 * Final candidate output from `ACCEL_sift.py`
 * Intermediate files: `.dat`, `.fft`, `.red.fft`, `.accelcands`, etc.
 * Aggregated command files in `ss_commands/`
-
----
 
 The following versions of the script are available:
 
@@ -108,7 +100,6 @@ The following versions of the script are available:
 
 5. Versions with the DDplan prefix use PRESTO’s DDplan.py to generate dedispersion plans, suitable for blind searches over wide DM ranges.
 
----
 ## Citation
 
 This script is a framework and we welcome modifications tailored to your specific processing needs.
