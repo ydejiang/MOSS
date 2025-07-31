@@ -97,6 +97,19 @@ This will:
 
 ---
 
+The following versions of the script are available:
+
+1. MOSS_v1.sh: Parallel processing of one observation date at a time.
+
+2. MOSS_v2.sh: Processing multiple observation dates simultaneously and in parallel.
+
+3. MOSS_v11.sh and MOSS_v22.sh: Enhanced versions of v1 and v2, respectively, with red noise removal included.
+
+4. MOSS_v2.sh.sub: A specialized version for Globular Clusters with known pulsars. It uses a narrow DM range and generates *.sub??? files outputs for folding.
+
+5. Versions with the DDplan prefix use PRESTO’s DDplan.py to generate dedispersion plans, suitable for blind searches over wide DM ranges.
+
+------
 ### Citation
 
 This script is a framework and we welcome modifications tailored to your specific processing needs.
