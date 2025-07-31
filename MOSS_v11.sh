@@ -170,7 +170,7 @@ multiple_obs_segment_search() {
         segment_dir="${Output_Dir}/segment_s$((${segment_number} + 1))_$((${start_index} + 1))-$((${end_index} + 1))fits"
         # Generate rfifind command with modified output name and directory                                                                                          
         output_name="${Source_name}_${Obs_data}_s$((${segment_number} + 1))_$((${start_index} + 1))-$((${end_index} + 1))fits"
-        echo "cd ${segment_dir} && sh ${PCSSP_sift} "                                                                  
+        echo "cd ${segment_dir} && bash ${PCSSP_sift} "                                                                  
     }                                                                                             
     #*****************************************************                                            
     #-----------------------------------------------------
@@ -226,17 +226,17 @@ multiple_obs_segment_search() {
     cat ${Output_Dir}/segment_command/prepsubband_segment.txt | xargs -n 1 -P ""${P}"" -I {} sh -c ""{}""                                                   
     #*************************************************************************************************************                                          
     # realfft                                                                                                                                               
-    sh  ${Output_Dir}/segment_command/realfft_segment.txt                                                                                                    
+    bash  ${Output_Dir}/segment_command/realfft_segment.txt                                                                                                    
     ls -v ${Output_Dir}/segment_*/*_realfft.txt | xargs -n1 -I{} cat {} >> ${Output_Dir}/segment_command/all_segment_realfft_commands.txt                      
     cat ${Output_Dir}/segment_command/all_segment_realfft_commands.txt | xargs -n 1 -P ""${P}"" -I {} sh -c ""{}""                                          
     #*************************************************************************************************************                                          
     # rednoise  
-    sh  ${Output_Dir}/segment_command/rednoise_segment.txt                                                                                           
+    bash  ${Output_Dir}/segment_command/rednoise_segment.txt                                                                                           
     ls -v ${Output_Dir}/segment_*/*_rednoise.txt | xargs -n1 -I{} cat {} >> ${Output_Dir}/segment_command/all_segment_rednoise_commands.txt            
     cat ${Output_Dir}/segment_command/all_segment_rednoise_commands.txt | xargs -n 1 -P ""${P}"" -I {} sh -c ""{}""                                          
     #*************************************************************************************************************                                          
     # realfft_inv  
-    sh  ${Output_Dir}/segment_command/realfft_inv_segment.txt                                                                                               
+    bash  ${Output_Dir}/segment_command/realfft_inv_segment.txt                                                                                               
     ls -v ${Output_Dir}/segment_*/*_realfft_inv.txt | xargs -n1 -I{} cat {} >> ${Output_Dir}/segment_command/all_segment_realfft_inv_commands.txt             
     cat ${Output_Dir}/segment_command/all_segment_realfft_inv_commands.txt | xargs -n 1 -P ""${P}"" -I {} sh -c ""{}""                                     
     #*************************************************************************************************************                                          
@@ -244,7 +244,7 @@ multiple_obs_segment_search() {
     find ${Output_Dir}/segment_* -maxdepth 1 -name "*_red.inf" | sort -V | xargs -n1 -I{} -P10 echo "{}" | while read i; do rm -rf "${i:0:-8}".dat "${i:0:-8}".inf "${i:0:-8}".fft; done
     #*************************************************************************************************************   
     # accelsearch                                                                                                                                           
-    sh  ${Output_Dir}/segment_command/accelsearch_segment.txt                                                                                                
+    bash  ${Output_Dir}/segment_command/accelsearch_segment.txt                                                                                                
     ls -v ${Output_Dir}/segment_*/*_accelsearch.txt | xargs -n1 -I{} cat {} >> ${Output_Dir}/segment_command/all_segment_accelsearch_commands.txt              
     cat ${Output_Dir}/segment_command/all_segment_accelsearch_commands.txt | xargs -n 1 -P ""${P}"" -I {} sh -c ""{}""                                      
     #*************************************************************************************************************                                          
@@ -254,7 +254,7 @@ multiple_obs_segment_search() {
     find ${Output_Dir}/segment_* -maxdepth 1 -name "*.fft" | sort -V | xargs -n1 -P"${P}" -I{} rm -rf {}
     #*************************************************************************************************************                                          
     # sifting                                                                                                                                               
-    sh  ${Output_Dir}/segment_command/sifting_segment.txt                                                                                                    
+    bash  ${Output_Dir}/segment_command/sifting_segment.txt                                                                                                    
     #*************************************************************************************************************  
 }
 #*****************************************************                                            
