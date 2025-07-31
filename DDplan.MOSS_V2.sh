@@ -161,7 +161,7 @@ multiple_obs_segment_search() {
         segment_dir="${Output_Dir}/segment_s$((${segment_number} + 1))_$((${start_index} + 1))-$((${end_index} + 1))fits"
         # Generate rfifind command with modified output name and directory                                                                                          
         output_name="${Source_name}_${Obs_data}_s$((${segment_number} + 1))_$((${start_index} + 1))-$((${end_index} + 1))fits"
-        echo "cd ${segment_dir} && sh ${PCSSP_sift} "                                                                  
+        echo "cd ${segment_dir} && bash ${PCSSP_sift} "                                                                  
     }                                                                                                                     
     #*****************************************************                                            
     #-----------------------------------------------------
@@ -226,12 +226,12 @@ ls -v ${output_Dir}/*/segment_command/prepsubband_segment.txt | xargs -n 1 -I {}
 cat ${output_Dir}/ss_commands/ss_prepsubband_commands.txt | xargs -n 1 -P ""${P}"" -I {} sh -c ""{}""
 # realfft
 ls -v ${output_Dir}/*/segment_command/realfft_segment.txt | xargs -n 1 -I {} cat {} >> ${output_Dir}/ss_commands/ss_realfft1_commands.txt
-sh  ${output_Dir}/ss_commands/ss_realfft1_commands.txt
+bash  ${output_Dir}/ss_commands/ss_realfft1_commands.txt
 ls -v ${output_Dir}/*/segment_*/*_realfft.txt | xargs -n 1 -I {} cat {} >> ${output_Dir}/ss_commands/ss_realfft2_commands.txt
 cat ${output_Dir}/ss_commands/ss_realfft2_commands.txt | xargs -n 1 -P ""${P}"" -I {} sh -c ""{}""   
 # accelsearch
 ls -v ${output_Dir}/*/segment_command/accelsearch_segment.txt | xargs -n 1 -I {} cat {} >> ${output_Dir}/ss_commands/ss_accelsearch1_commands.txt
-sh  ${output_Dir}/ss_commands/ss_accelsearch1_commands.txt
+bash  ${output_Dir}/ss_commands/ss_accelsearch1_commands.txt
 ls -v ${output_Dir}/*/segment_*/*_accelsearch.txt | xargs -n 1 -I {} cat {} >> ${output_Dir}/ss_commands/ss_accelsearch2_commands.txt
 cat ${output_Dir}/ss_commands/ss_accelsearch2_commands.txt | xargs -n 1 -P ""${P}"" -I {} sh -c ""{}""   
 # remove .fft
@@ -239,7 +239,7 @@ cat ${output_Dir}/ss_commands/ss_accelsearch2_commands.txt | xargs -n 1 -P ""${P
 find ${output_Dir}/*/segment_* -maxdepth 1 -name "*.fft" | sort -V | xargs -n1 -P"${P}" -I{} rm -rf {}
 # sifiting and folding
 ls -v ${output_Dir}/*/segment_command/sifting_segment.txt | xargs -n 1 -I {} cat {} >> ${output_Dir}/ss_commands/ss_sifting_commands.txt
-sh  ${output_Dir}/ss_commands/ss_sifting_commands.txt
+bash  ${output_Dir}/ss_commands/ss_sifting_commands.txt
 #-----------------------------------------------------
 #***************************************************** 
 #-----------------------------------------------------
