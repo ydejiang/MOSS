@@ -103,5 +103,5 @@ if len(cands):
 # Write candidates to STDOUT
 if len(cands):
     cands.sort(key=attrgetter('sigma'), reverse=True)
-    sifting.write_candlist(cands)
-    # sifting.write_candlist(cands, 'cands.txt')
+    # sifting.write_candlist(cands)
+    sifting.write_candlist(cands, 'cands.txt')
