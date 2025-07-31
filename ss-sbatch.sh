@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH -o ydj.%j.out
 #SBATCH -p cpu-liminghui
-#SBATCH -J ydj-m92-ss
+#SBATCH -J ydj-m13-ss
 #SBATCH -N 1
 #SBATCH -n 15
 
