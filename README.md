@@ -51,6 +51,7 @@ project/
     │   ├── segment_*/
     │   └── segment_command/
     └── ...
+```
 
 ## Usage
 
@@ -88,7 +89,7 @@ This will:
 * Intermediate files: `.dat`, `.fft`, `.red.fft`, `.accelcands`, etc.
 * Aggregated command files in `ss_commands/`
 
-The following versions of the script are available:
+### The following versions of the script are available:
 
 1. MOSS_v1.sh: Parallel processing of one observation date at a time.
 
