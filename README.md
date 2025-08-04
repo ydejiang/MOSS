@@ -20,13 +20,13 @@
 
 ## Pipeline Flow:
 
-1. RFI Mitigation (`rfifind`)
-2. Dedispersion (`prepsubband` + `DDplan.py`, optional)
-3. FFT (`realfft`)
-4. Rednoise removal (`rednoise`, optional)
-5. Acceleration Search (`accelsearch`)
-6. Candidate Sifting (`ACCEL_sift.py`)
-7. Folding (`prepfold`, optional)
+* RFI Mitigation (`rfifind`)
+* Dedispersion (`prepsubband` + `DDplan.py`, optional)
+* FFT (`realfft`)
+* Rednoise removal (`rednoise`, optional)
+* Acceleration Search (`accelsearch`)
+* Candidate Sifting (`ACCEL_sift.py`)
+* Folding (`prepfold`, optional)
 
 Each step runs in parallel for optimal performance.
 
@@ -90,15 +90,15 @@ This will:
 
 ### The following versions of the script are available:
 
-1. MOSS_v1.sh: Parallel processing of one observation date at a time.
+* MOSS_v1.sh: Parallel processing of one observation date at a time.
 
-2. MOSS_v2.sh: Processing multiple observation dates simultaneously and in parallel.
+* MOSS_v2.sh: Processing multiple observation dates simultaneously and in parallel.
 
-3. MOSS_v11.sh and MOSS_v22.sh: Enhanced versions of v1 and v2, respectively, with red noise removal included.
+* MOSS_v11.sh and MOSS_v22.sh: Enhanced versions of v1 and v2, respectively, with red noise removal included.
 
-4. MOSS_v2.sh.sub: A specialized version for Globular Clusters with known pulsars. It uses a narrow DM range and generates *.sub??? files outputs for folding.
+* MOSS_v2.sh.sub: A specialized version for Globular Clusters with known pulsars. It uses a narrow DM range and generates *.sub??? files outputs for folding.
 
-5. Versions with the DDplan prefix use PRESTO’s DDplan.py to generate dedispersion plans, suitable for blind searches over wide DM ranges.
+* Versions with the DDplan prefix use PRESTO’s DDplan.py to generate dedispersion plans, suitable for blind searches over wide DM ranges.
 
 ## Citation
 
@@ -106,6 +106,6 @@ This script is a framework and we welcome modifications tailored to your specifi
 
 If you find this script helpful in your work, please cite our repository and the following paper:
 
-Yin et al., 2025, APJ
+Yin et al., 2025, to be determined...
 
 
