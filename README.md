@@ -85,7 +85,7 @@ This will:
 
 * Segmented processing directories with logs
 * Final candidate output from `ACCEL_sift.py`
-* Intermediate files: `.dat`, `.fft`, `.red.fft`, `.accelcands`, etc.
+* Intermediate files: `.dat`, `.fft`, `.red.fft`, etc.
 * Aggregated command files in `ss_commands/`
 
 ### The following versions of the script are available:
