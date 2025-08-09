@@ -254,7 +254,7 @@ bash  ${output_Dir}/ss_commands/ss_realfft_inv1_commands.txt
 ls -v ${output_Dir}/*/segment_*/*_realfft_inv.txt | xargs -n 1 -I {} cat {} >> ${output_Dir}/ss_commands/ss_realfft_inv2_commands.txt
 cat ${output_Dir}/ss_commands/ss_realfft_inv2_commands.txt | xargs -n 1 -P ""${P}"" -I {} sh -c ""{}""
 # rm .dat .inf .fft
-find ${output_Dir}/*/segment_* -maxdepth 1 -name "*_red.inf" | sort -V | xargs -n1 -I{} -P10 echo "{}" | while read i; do rm -rf "${i:0:-8}".dat "${i:0:-8}".inf "${i:0:-8}".fft; done
+find ${output_Dir}/*/segment_* -maxdepth 1 -name "*_red.inf" | sort -V | xargs -n1 -I{} -P"${P}" echo "{}" | while read i; do rm -rf "${i:0:-8}".dat "${i:0:-8}".inf "${i:0:-8}".fft; done
 # accelsearch
 ls -v ${output_Dir}/*/segment_command/accelsearch_segment.txt | xargs -n 1 -I {} cat {} >> ${output_Dir}/ss_commands/ss_accelsearch1_commands.txt
 bash  ${output_Dir}/ss_commands/ss_accelsearch1_commands.txt
