@@ -204,9 +204,9 @@ multiple_obs_segment_search() {
     ##-----------------------------------------------------
     #*************************************************************************************************************                                          
     # DDplan.py files
-    mv ${Source_name}_de-DM_MOSS.comd ${Output_Dir}/segment_command
-    mv dedisp_${Source_name}.py ${Output_Dir}/segment_command
-    mv ${Source_name}.eps ${Output_Dir}/segment_command
+    #mv ${Source_name}_de-DM_MOSS.comd ${Output_Dir}/segment_command
+    #mv dedisp_${Source_name}.py ${Output_Dir}/segment_command
+    #mv ${Source_name}.eps ${Output_Dir}/segment_command
     # rfidind                                                                                                                                               
     cat ${Output_Dir}/segment_command/rfifind_segment.txt | xargs -n 1 -P ""${P}"" -I {} sh -c ""{}""                                                       
     #*************************************************************************************************************                                          
