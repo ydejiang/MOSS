@@ -244,9 +244,9 @@ multiple_obs_segment_search() {
     ##-----------------------------------------------------
     #*************************************************************************************************************                                          
     # DDplan.py files
-    mv ${Source_name}_de-DM_MOSS.comd ${Output_Dir}/segment_command
-    mv dedisp_${Source_name}.py ${Output_Dir}/segment_command
-    mv ${Source_name}.eps ${Output_Dir}/segment_command
+    #mv ${Source_name}_de-DM_MOSS.comd ${Output_Dir}/segment_command
+    #mv dedisp_${Source_name}.py ${Output_Dir}/segment_command
+    #mv ${Source_name}.eps ${Output_Dir}/segment_command
     # rfidind                                                                                                                                               
     cat ${Output_Dir}/segment_command/rfifind_segment.txt | xargs -n 1 -P ""${P}"" -I {} sh -c ""{}""                                                       
     #*************************************************************************************************************                                          
@@ -269,7 +269,7 @@ multiple_obs_segment_search() {
     cat ${Output_Dir}/segment_command/all_segment_realfft_inv_commands.txt | xargs -n 1 -P ""${P}"" -I {} sh -c ""{}""                                     
     #*************************************************************************************************************   
     # rm -rf .dat .inf .fft
-    find ${Output_Dir}/segment_* -maxdepth 1 -name "*_red.inf" | sort -V | xargs -n1 -I{} -P10 echo "{}" | while read i; do rm -rf "${i:0:-8}".dat "${i:0:-8}".inf "${i:0:-8}".fft ; done
+    find ${Output_Dir}/segment_* -maxdepth 1 -name "*_red.inf" | sort -V | xargs -n1 -I{} -P""${P}"" echo "{}" | while read i; do rm -rf "${i:0:-8}".dat "${i:0:-8}".inf "${i:0:-8}".fft ; done
     #*************************************************************************************************************                                          
     # accelsearch                                                                                                                                           
     bash  ${Output_Dir}/segment_command/accelsearch_segment.txt                                                                                                
