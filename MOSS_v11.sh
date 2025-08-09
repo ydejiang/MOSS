@@ -241,7 +241,7 @@ multiple_obs_segment_search() {
     cat ${Output_Dir}/segment_command/all_segment_realfft_inv_commands.txt | xargs -n 1 -P ""${P}"" -I {} sh -c ""{}""                                     
     #*************************************************************************************************************                                          
     # remove .fft and .dat / .inf  
-    find ${Output_Dir}/segment_* -maxdepth 1 -name "*_red.inf" | sort -V | xargs -n1 -I{} -P10 echo "{}" | while read i; do rm -rf "${i:0:-8}".dat "${i:0:-8}".inf "${i:0:-8}".fft; done
+    find ${Output_Dir}/segment_* -maxdepth 1 -name "*_red.inf" | sort -V | xargs -n1 -I{} -P"${P}" echo "{}" | while read i; do rm -rf "${i:0:-8}".dat "${i:0:-8}".inf "${i:0:-8}".fft; done
     #*************************************************************************************************************   
     # accelsearch                                                                                                                                           
     bash  ${Output_Dir}/segment_command/accelsearch_segment.txt                                                                                                
