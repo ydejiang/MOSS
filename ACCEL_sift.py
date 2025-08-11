@@ -5,6 +5,8 @@ import glob
 import presto.sifting as sifting
 from operator import itemgetter, attrgetter
 
+# Adapted from ACCEL_sift.py of PRESTO, @ Yin Dejiang, 20250811
+
 # Note:  You will almost certainly want to adjust
 #        the following variables for your particular search
 
