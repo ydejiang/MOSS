@@ -105,7 +105,7 @@ This will:
 
 This script is a framework and we welcome modifications tailored to your specific processing needs.
 
-If the scripts of the repository are helpful to your work, please cite our repository links and the paper. Thank you!
+If the scripts in this repository are helpful to your work, please cite our repository links and the paper. Thank you!
 
 https://github.com/ydejiang/MOSS
 
