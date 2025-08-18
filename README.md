@@ -91,9 +91,9 @@ This will:
 
 ### The following versions of the script are available:
 
-* MOSS_v1.sh: Parallel processing of one observation date at a time.
+* MOSS_v1.sh: Parallel processing of one observation at a time.
 
-* MOSS_v2.sh: Processing multiple observation dates simultaneously and in parallel.
+* MOSS_v2.sh: Processing multiple observations simultaneously and in parallel.
 
 * MOSS_v11.sh and MOSS_v22.sh: Enhanced versions of v1 and v2, respectively, with red noise removal included.
 
