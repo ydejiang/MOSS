@@ -9,6 +9,7 @@
 # cp $PRESTO/examplescripts/ACCEL_sift.py .
 # cd .. 
 # python ACCEL_sift.py  > cands.txt
+# python /path/to/accel/ACCEL_sift.py -ACCEL 200 -JERK 600 > cands.txt
 python /path/to/accel/ACCEL_sift.py  > cands.txt
 
 ##
