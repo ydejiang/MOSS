@@ -110,8 +110,3 @@ If the scripts in this repository are helpful to your work, please cite our repo
 https://github.com/ydejiang/MOSS
 
 https://ui.adsabs.harvard.edu/abs/2025ApJ...991..177Y/abstract
-
-https://arxiv.org/abs/2508.05998
-
-
-
