@@ -110,7 +110,7 @@ If the scripts in this repository are helpful to your work, please cite our repo
 https://github.com/ydejiang/MOSS
 
 https://ui.adsabs.harvard.edu/abs/2025ApJ...991..177Y/abstract
-
+```
 @ARTICLE{2025ApJ...991..177Y,
        author = {{Yin}, Dejiang and {Wang}, Lin and {Zhang}, Li-yun and {Qian}, Lei and {Li}, Baoda and {Liu}, Kuo and {Peng}, Bo and {Dai}, Yinfeng and {Li}, Yaowei and {Pan}, Zhichen},
         title = "{Illuminating Hidden Pulsars: Scintillation-enhanced Discovery of Two Binary Millisecond Pulsars in M13 with FAST}",
@@ -129,3 +129,4 @@ archivePrefix = {arXiv},
        adsurl = {https://ui.adsabs.harvard.edu/abs/2025ApJ...991..177Y},
       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
+```
