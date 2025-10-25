@@ -108,8 +108,6 @@ This script is a framework and we welcome modifications tailored to your specifi
 If the scripts in this repository are helpful to your work, please cite our repository links and the paper. Thank you!
 
 https://github.com/ydejiang/MOSS
-
-https://ui.adsabs.harvard.edu/abs/2025ApJ...991..177Y/abstract
 ```
 @ARTICLE{2025ApJ...991..177Y,
        author = {{Yin}, Dejiang and {Wang}, Lin and {Zhang}, Li-yun and {Qian}, Lei and {Li}, Baoda and {Liu}, Kuo and {Peng}, Bo and {Dai}, Yinfeng and {Li}, Yaowei and {Pan}, Zhichen},
