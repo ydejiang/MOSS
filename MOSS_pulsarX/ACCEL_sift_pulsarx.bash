@@ -1,7 +1,7 @@
 #!/bin/bash
 #-------------------------------
 #- dj.yin at foxmail dot com   -
-#- Dejiang Yin, 2024-12-30     -   
+#- Dejiang Yin, 2025-12-14     -   
 #-------------------------------
 # Source Information
 telescope=FAST 
