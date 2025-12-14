@@ -16,7 +16,7 @@ fast_fold_template=/home/software/PulsarX/include/template/fast_fold.template
 # Only accel:
 python ""${ACCEL_sift_pulsarx}"" -ACCEL 20 -minP 2. -maxP 6.8 -minS 1 2> pulsarX_cands.List
 # For jerk search:
-#python ""${python_1}"" -ACCEL 300 -JERK 900 -minP 2. -maxP 10.8 -minS 6 2> pulsarX_cands.List
+#python ""${ACCEL_sift_pulsarx}"" -ACCEL 300 -JERK 900 -minP 2. -maxP 10.8 -minS 6 2> pulsarX_cands.List
 
 # For folding
 FileList=$(cat *.FileList)
