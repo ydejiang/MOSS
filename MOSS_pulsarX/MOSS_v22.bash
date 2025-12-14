@@ -15,7 +15,7 @@ output_Dir=/home/data/NGC6517/20190625/demo/test1
 Source_name=NGC6517
 #-----------------------------------------------------
 # The path for sifting code, as followiing:
-PCSSP_sift=/home/data/NGC6517/20190625/demo/pulsarX_sifting/ACCEL_sift_pulsarx.bash
+pulsarX_sift=/home/data/NGC6517/20190625/demo/pulsarX_sifting/ACCEL_sift_pulsarx.bash
 #-----------------------------------------------------
 # Setting for ls *. | xargs -n1 -P{} -I{} ... # ""${P}"",-P, --max-procs=MAX-PROCS  Run up to max-procs processes at a time.
 p=10    # only for dedisperse_all_fil & folding
