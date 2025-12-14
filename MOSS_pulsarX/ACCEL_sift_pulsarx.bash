@@ -10,9 +10,6 @@ ra=18:01:50.52     # default_value("00:00:00"), "RA (hhmmss.s)")
 dec=-08:57:31.60   # default_value("00:00:00"), "DEC (ddmmss.s)")
 rootname=NGC6517   # ("rootname,o", value<string>()->default_value("J0000-00"), "Output rootname") 
 ##
-zmax=_ACCEL_20
-# zmax=_ACCEL_10_JERK_20  # Uncomment for jerk searches
-
 # Path to Python scripts
 ACCEL_sift_pulsarx=/home/data/NGC6517/20190625/demo/pulsarX_sifting/ACCEL_sift_pulsarx.py
 fast_fold.template=/home/software/PulsarX/include/template/fast_fold.template
