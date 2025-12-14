@@ -39,7 +39,7 @@ numharm=16
 sigma=2.0
 #-----------------------------------------------------
 # The command setting for the searching routines,
-# dedisperse_all_fil="dedisperse_all_fil -v -t 4 --td --ddplan ddplan.txt -z kadaneF 8 4 zdot --incoherent --format presto --cont --psrfits"
+# dedisperse_all_fil="dedisperse_all_fil -v -t 4 --td --ddplan ${output_Dir}/ddplan.txt -z kadaneF 8 4 zdot --incoherent --format presto --cont --psrfits"
 dedisperse_all_fil="dedisperse_all_fil -v -t 4 --td ${td} --fd ${fd} --dms ${dms} --ddm ${ddm} --ndm ${ndm} -z kadaneF 8 4 zdot --incoherent --format presto --cont --psrfits"
 realfft="realfft -fwd"
 accelsearch="accelsearch -zmax ${zmax} -numharm ${numharm} -sigma ${sigma}"
