@@ -25,7 +25,7 @@ eval "psrfold_fil2 -v -t 4 --noarch --template ${fast_fold_template} --candfile 
 # Move result files to final folders (robust to large number of files)
 mkdir -p pulsarX
 find . -maxdepth 1 -name "*.png" -exec mv -t ./pulsarX {} +
-mv -rf *.cands ./pulsarX
+mv *.cands ./pulsarX
 
 echo "[INFO] All steps completed."
 date
