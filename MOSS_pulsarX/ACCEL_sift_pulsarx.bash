@@ -17,13 +17,13 @@ zmax=_ACCEL_20
 ACCEL_sift_pulsarx=/home/data/NGC6517/20190625/demo/pulsarX_sifting/ACCEL_sift_pulsarx.py
 fast_fold.template=/home/software/PulsarX/include/template/fast_fold.template
 # Only accel:
-python ""${ACCEL_sift_pulsarx}"" -ACCEL 20 -minP 2. -maxP 6.8 -minS 1 -maxS 40 2> pulsarX_cands.List
+python ""${ACCEL_sift_pulsarx}"" -ACCEL 20 -minP 2. -maxP 6.8 -minS 1 2> pulsarX_cands.List
 # For jerk search:
 #python ""${python_1}"" -ACCEL 300 -JERK 900 -minP 2. -maxP 10.8 -rDM 4 -minS 6 -maxS 40 2> pulsarX_cands.List
 
 # For folding
 FileList=$(cat *.FileList)
-psrfold_fil2 -v -t 4 --noarch --template ${fast_fold.template} --candfile pulsarX_cands.List --plotx -n 64 -b 64 --clfd 2  -z kadaneF 8 4 zdot --telescope ${telescope} --srcname ${srcname} --ra ${ra} --dec ${dec} -o ${rootname} --cont --psrfits "${FileList}"
+eval "psrfold_fil2 -v -t 4 --noarch --template ${fast_fold.template} --candfile pulsarX_cands.List --plotx -n 64 -b 64 --clfd 2  -z kadaneF 8 4 zdot --telescope ${telescope} --srcname ${srcname} --ra ${ra} --dec ${dec} -o ${rootname} --cont --psrfits ${FileList}"
 
 # Move result files to final folders (robust to large number of files)
 mkdir -p pulsarX
