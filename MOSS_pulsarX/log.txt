@@ -1,3 +1,8 @@
 # PRESTO + pulsarX
 # prepsto, accelsearch
 # pulsarX, de-DM
+
+sifting.py, PRESTO, for output JERK search's 'w', to calculate F2 for pulsarX folding. 
+to find the file and replace:
+import presto.sifting as sifting
+print(sifting.__file__)
