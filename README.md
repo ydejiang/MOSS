@@ -101,6 +101,8 @@ This will:
 
 * Versions with the DDplan prefix use PRESTO’s DDplan.py to generate dedispersion plans, suitable for blind searches over wide DM ranges.
 
+* Pipelines with [PulsarX](https://github.com/ypmen/PulsarX) and [TransientX](https://github.com/ypmen/TransientX) are added.
+
 ## Citation
 
 This script is a framework and we welcome modifications tailored to your specific processing needs.
