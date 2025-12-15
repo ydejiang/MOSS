@@ -72,7 +72,7 @@ multiple_obs_segment_search() {
         segment_dir="${Output_Dir}/segment_s$((${segment_number} + 1))_$((${start_index} + 1))-$((${end_index} + 1))fits"
         # Generate rfifind command with modified output name and directory                                                                                          
         output_name="${Source_name}_${Obs_data}_s$((${segment_number} + 1))_$((${start_index} + 1))-$((${end_index} + 1))fits"  
-        echo "cd ${segment_dir} && ${replot_fil} --candfile ${output_name}.cands  \$(ls ${File_Path}/*.fits | tail -n +$((start_index + 1)) | head -n $((end_index - start_index + 1))) > ${segment_dir}/${output_name}_replot_fil.log"        
+        echo "cd ${segment_dir} && ${replot_fil} --candfile ${output_name}*.cands  \$(ls ${File_Path}/*.fits | tail -n +$((start_index + 1)) | head -n $((end_index - start_index + 1))) > ${segment_dir}/${output_name}_replot_fil.log"        
     }  
     #-----------------------------------------------------
     # porferming above defined functions
