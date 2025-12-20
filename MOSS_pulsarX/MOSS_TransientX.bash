@@ -23,7 +23,7 @@ files_per_segment=10000000
 overlap_files=0
 #-----------------------------------------------------
 # The command setting for the searching routines
-transientx_fil="transientx_fil -v -t 4 --zapthre 3.0 --fd 1 --overlap 0.1 --ddplan ${output_Dir}/ddplan_TransientX.txt --thre 7 --maxw 0.1 --snrloss 0.1 -l 2.0 --drop -z kadaneF 8 4 zdot --psrfits"
+transientx_fil="transientx_fil -v -t 4 --zapthre 3.0 --fd 1 --overlap 0.1 --ddplan ${output_Dir}/ddplan_TransientX.txt --thre 7 --maxw 0.1 --snrloss 0.1 -l 2.0 --drop -z kadaneF 8 4 zdot --cont --psrfits"
 replot_fil="replot_fil -v -t 4 --zapthre 3.0 --td 1 --fd 1 --dmcutoff 3 --widthcutoff 0.1 --snrcutoff 7 --snrloss 0.1 --zap --zdot --kadane 8 4 7 --clean --psrfits"
 #-----------------------------------------------------
 
