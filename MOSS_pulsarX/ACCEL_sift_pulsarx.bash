@@ -20,6 +20,8 @@ python ""${ACCEL_sift_pulsarx}"" -ACCEL 20 -minP 2. -maxP 6.8 -minS 1 2> pulsarX
 
 # For folding
 FileList=$(cat *.FileList)
+rootname=$(ls *.FileList)
+rootname=${rootname%.*}
 eval "psrfold_fil2 -v -t 4 --noarch --template ${fast_fold_template} --candfile pulsarX_cands.List --plotx -n 64 -b 64 --clfd 2  -z kadaneF 8 4 zdot --telescope ${telescope} --srcname ${srcname} --ra ${ra} --dec ${dec} -o ${rootname} --cont --psrfits ${FileList}"
 
 # Move result files to final folders (robust to large number of files)
